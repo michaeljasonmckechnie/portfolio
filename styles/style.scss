@@ -124,7 +124,7 @@ h1 {
 
     #greeting p {
         padding: 15px 75px;
-        font-size: 24px;
+        font-size: calc(100vw / 32);
         text-align: justify;
     }
 
