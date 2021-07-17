@@ -15,14 +15,15 @@ body {
 
 body header {
   background-color: white;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
+  position: relative;
   width: 100%;
-  z-index: 2;
 }
 
 body header nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 2;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +48,9 @@ body header nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 body header nav ul li {
@@ -91,7 +95,6 @@ body main section h1 {
 @keyframes fade {}body main section img {
   display: block;
   height: auto;
-  margin: 0;
   padding-bottom: -5px;
   width: 100%;
 }
