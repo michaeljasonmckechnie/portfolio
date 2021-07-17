@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +10,7 @@
 }
 
 body {
+  background-color: #ff0000aa;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -22,9 +26,12 @@ body {
   -ms-grid-column-span: 6;
   grid-area: 1 / 1 / 2 / 7;
   padding: 15px;
-  font-size: calc(100vw / 24);
-  background: darkmagenta;
+  font-size: calc(100vw / 32);
+  color: white;
+  letter-spacing: calc(100vw / 99.99);
+  background: #1a1a1a;
   width: 100%;
+  font-family: "Otomanopee One";
 }
 
 header {
@@ -68,6 +75,9 @@ li {
 
 a {
   color: black;
+  font-size: calc(100vw / 48);
+  font-family: Anton;
+  letter-spacing: 1px;
 }
 
 .button {
