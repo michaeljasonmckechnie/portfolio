@@ -19,6 +19,8 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: 1 / 1 / 2 / 7;
+  margin: 15px auto;
+  font-size: 32px;
 }
 
 header {
@@ -42,13 +44,11 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   background: white;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -57,7 +57,17 @@ ul {
 }
 
 li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
   padding: 15px;
+  border: none;
+  width: 100%;
 }
 
 main {
@@ -83,6 +93,13 @@ img {
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
   grid-area: 3 / 1 / 4 / 7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex {
@@ -97,10 +114,10 @@ img {
   -ms-grid-column-span: 6;
   grid-column: 1 / 7;
   margin: 15px auto;
+  width: 100%;
 }
 
 .flex-item {
-  border: 1px solid black;
   height: 100px;
   width: 33.34%;
 }
@@ -109,11 +126,60 @@ img {
   background-color: red;
 }
 
+#quick-2 {
+  background-color: lightgray;
+}
+
+#quick-3 {
+  background-color: blue;
+}
+
 p {
   margin: 15px;
 }
 
 h1 {
   text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+  ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #greeting {
+    background: green;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #greeting p {
+    padding: 30px;
+    font-size: 24px;
+    text-align: justify;
+  }
+  #greeting-image {
+    -ms-flex-preferred-size: 33.34%;
+        flex-basis: 33.34%;
+  }
+  #greeting-copy {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: green;
+    -ms-flex-preferred-size: 66.66%;
+        flex-basis: 66.66%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
