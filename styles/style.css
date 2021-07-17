@@ -167,7 +167,7 @@ h1 {
             justify-content: flex-end;
   }
   #greeting {
-    background: green;
+    background: orangered;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
