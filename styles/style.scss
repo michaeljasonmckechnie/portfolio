@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,9 +14,12 @@ body {
 }
 
 #header-greeting {
+    display: block;
     grid-area: 1 / 1 / 2 / 7;
-        margin: 15px auto;
-        font-size: 32px;
+        padding: 15px;
+        font-size: calc(100vw / 24);
+        background: darkmagenta;
+        width: 100%;
 
 }
 
@@ -49,12 +54,22 @@ li {
     text-align: center;
 }
 
+a {
+    color: black;
+}
+
 .button {
+    color: white;
     text-decoration: none;
     display: inline-block;
     padding: 15px;
+    background: #ff0000;
     border: none;
     width: 100%;
+}
+
+.button:hover {
+    background: #000;
 }
 
 main {
@@ -74,6 +89,7 @@ img {
     grid-area: 3 / 1 / 4 / 7;
     display: flex;
     flex-direction: column;
+    font-family: "Roboto Condensed";
 }
 
 .flex {
@@ -106,7 +122,10 @@ p {
 }
 
 h1 {
+    background: slateblue;
+    padding: 15px;
     text-align: center;
+    font-size: calc(100vw / 24);
 }
 
 @media screen and (min-width: 700px) {
@@ -115,7 +134,7 @@ h1 {
     }
 
     #greeting {
-        border: 1px solid black;
+        // border: 1px solid black;
         background: green;
         flex-direction: row;
         align-items: center;
@@ -123,8 +142,9 @@ h1 {
     }
 
     #greeting p {
-        padding: 15px 75px;
+        padding: 25px 75px;
         font-size: calc(100vw / 32);
+        line-height: 135%;
         text-align: justify;
     }
 
@@ -134,7 +154,7 @@ h1 {
 
     #greeting-copy {
         align-items: center;
-        background-color: green;
+        background-color: orangered;
         flex-basis: 66.66%;
         justify-content: center;
     }
