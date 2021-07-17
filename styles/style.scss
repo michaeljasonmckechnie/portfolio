@@ -36,7 +36,7 @@ header {
 
     position: sticky;
     position: -webkit-sticky;
-    top: 0;
+    top: -1px;
 }
 
 nav {
@@ -72,14 +72,15 @@ a {
     color: white;
     text-decoration: none;
     display: inline-block;
+    border: 1px solid #ff0000;
     padding: 15px;
     background: #ff0000;
-    border: none;
     width: 100%;
 }
 
 .button:hover {
     background: #000;
+    border: 1px solid white;
 }
 
 main {
