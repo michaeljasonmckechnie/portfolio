@@ -15,13 +15,6 @@ body {
 
 body header {
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -29,12 +22,36 @@ body header {
   z-index: 2;
 }
 
+body header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header nav img {
+  display: block;
+  height: auto;
+  width: 25px;
+}
+
 body header nav ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
 }
 
 body header nav ul li {
   display: inline-block;
+  padding: 0 5px;
 }
 
 body header nav ul li a {
@@ -42,9 +59,6 @@ body header nav ul li a {
 }
 
 body main {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,37 +66,46 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  padding: 0;
+  margin: 0;
   width: 100%;
 }
 
 body main section {
-  background-color: orangered;
+  background-color: #fff;
+  overflow: hidden;
   width: 100%;
 }
 
 body main section h1 {
-  border: 1px solid black;
-  text-align: center;
+  -webkit-animation: fade 2s linear 2s infinite;
+          animation: fade 2s linear 2s infinite;
   padding: 10px 0;
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-body main section img {
-  border: 1px solid limegreen;
+@-webkit-keyframes fade {}
+
+@keyframes fade {}body main section img {
+  display: block;
   height: auto;
-  padding: 10px 15px;
+  margin: 0;
+  padding-bottom: -5px;
   width: 100%;
 }
 
-body main section p {
-  background: orangered;
-  border: 1px solid pink;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+body main section img::after {
+  content: "asdfadsf";
   margin: 0;
+  padding: 0;
+}
+
+body main section p {
+  background: #fff;
   padding: 10px 15px;
   text-align: justify;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
